@@ -1,0 +1,286 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "media";
+
+%font {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+%wh-block {
+  width: 560px;
+  height: 500px;
+}
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-j-center {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
+}
+
+body {
+  @extend %flex-j-center;
+  background: #F4F4F4;
+  position: relative;
+  top: 75px;
+}
+
+option:nth-child(3)::after {
+  content: " " url(http://www.blogger.com/img/icon_28_followers.png);
+}
+
+
+.container {
+  @extend %flex-j-center;
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  max-width: 1120px;
+  
+  height: 500px;
+  
+}
+
+.container__block-left {
+  @extend %wh-block;
+  color:white;
+  background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+}
+
+.title {
+  @extend %flex-between;
+  flex-direction:column;
+  height: 100%;
+  
+}
+
+.title__item {
+  @extend %font;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 40px;
+  width: 89px;
+  line-height: 140%;
+}
+
+.eco {
+  line-height: 65% !important;
+}
+
+.block-left__logo {
+  position: relative;
+}
+
+.logo__elipse_one {
+  position: absolute;
+  left: 20px;
+  bottom: 31px;
+  background: #428A60;
+  width: 398px;
+  height: 398px;
+  -moz-border-radius: 199px;
+  -webkit-border-radius: 199px;
+  border-radius: 199px;
+  
+  z-index: 1;
+}
+
+.logo__elipse_two {
+  position: absolute;
+  left: 235px;
+  bottom: -95px;
+  width: 688px;
+  height: 688px;
+  -moz-border-radius: 344px;
+  -webkit-border-radius: 344px;
+  border-radius: 344px;
+  opacity: 0.03;
+  border: 20px solid #FFFFFF
+}
+
+.logo__icon {
+  position: absolute;
+  left: 57px;
+  bottom: 33px;
+  z-index: 2;
+  width: 83.1%;
+}
+
+.container__block-right {
+  @extend %wh-block;
+}
+
+.block-right {
+  background: white;
+  @extend %flex-column;
+  height: 100%;
+  
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.block-right__title {
+ @extend %font;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  width: 320px;
+  line-height: 130%;
+  padding: 0px 0px 24px 0px;
+}
+
+.form {
+  @extend %flex-between;
+  flex-direction: column;
+  width: 320px;
+  height: 252px;
+  margin: 0px 6px 31px 0px;
+}
+
+.form__line {
+  @extend %flex-column;
+}
+
+.form__input {
+  @extend %font;
+  font-weight: 600;
+  font-size: 14px;
+  height: 50px;
+  width: 320px;
+  padding: 16px 96px 16px 20px;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  &::placeholder {
+    color: #212121;
+    opacity: 0.2;
+  }
+}
+
+.form__tel {
+  @extend %font;
+  font-weight: 600;
+  font-size: 14px;
+  width: 184px;
+  height: 50px;
+  padding: 16px 20px 16px 20px;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  &::placeholder {
+    color: #212121;
+    opacity: 0.2;
+  }
+}
+
+.form__label {
+  @extend %font;
+  font-weight: 800;
+  font-size: 12px;
+  height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px !important;
+}
+
+.form_textcolor {
+  color: #428A60;
+}
+
+.form__complex {
+  @extend %flex-between;
+}
+
+.form__language {
+  @extend %font;
+  width: 116.18px;
+  height: 50px;
+  border: 1px solid #E4E4E4;
+  padding: 16px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  background: url('/img/russia.svg') 59% 50% no-repeat,
+    url('/img/arrow_down.png') 83% 50% no-repeat; 
+}
+  
+.language {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__submit {
+  @extend %font;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  line-height: 130%;
+  width: 320px;
+  height: 42px;
+  background: #428A60;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  @extend %flex-j-center;
+  align-items: center;
+  &:hover {
+    background: #42a56b;
+  }
+  &:active {
+    background: #146335;
+  }
+}
+
+p {
+  margin-left: 2px;
+}
+
+.form_img {
+  margin: 0px 0px 0px 10px;
+}
+
+.line {
+  justify-content: space-between;
+  height: 172px !important;
+}
+
+.line__input {
+  @extend %flex-column;
+  height: 76px;
+}
+
+.footer {
+  display: none;
+}
+
+.footer__label {
+  @extend %font;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer__lock {
+  margin: 0px 20px 0px 20px;
+}

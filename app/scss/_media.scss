@@ -1,0 +1,112 @@
+@media (max-width: 1119px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  br {
+    display: none;
+  }
+
+  .footer {
+    display: flex !important;
+    height: 40px;
+    align-items: center;
+    margin-bottom: -1px;
+  }
+
+  .logo {
+    &__elipse_one {
+      max-width: 202px !important;
+      max-height: 202px !important;
+      border-radius: 101px !important;
+      text-align: center;
+      bottom: 2px !important;
+      left: 39px !important;
+    }
+
+    &__elipse_two {
+      display: none;
+    }
+    
+    &__icon {
+      max-width: 223px !important;
+      max-height: 122px !important;
+      left: 37px !important;
+      bottom: 33px !important;
+    }
+  }
+
+  .container {
+    min-width: 320px !important;
+    min-height: 724px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    &__block-left {
+      margin: 40px 0px 0px 0px;
+      color: black !important;
+      max-width: 280px !important;
+      max-height: 234px !important;
+      background: none !important;
+    }
+    &__block-right {
+      max-width: 280px !important;
+      max-height: 348px !important;
+    }
+  }
+
+  .block-right__title, .form {
+    max-width: 280px !important;
+    &__submit {
+      max-width: 280px !important;
+      margin-bottom: -8px;
+    }
+  }
+
+  
+
+  .block-right__form {
+    margin: 0px !important;
+    padding: 19px 0px 0px 0px;
+  }
+
+  .block-right__title {
+    padding: 1px 0px 2px 0px !important;
+    
+  }
+
+  .title {
+    flex-direction: row !important;
+    align-items: baseline;
+    &__item {
+      margin: -2px 0px 0px 0px !important;
+
+    }
+  }
+
+  .eco {
+    width: auto !important;
+  }
+
+  .form__input {
+    max-width: 280px;
+    padding: 16px 0px 16px 10px !important;
+  }
+
+  .form__language {
+    width: 98px !important;
+    padding: 16px 0px 16px 12px !important;
+    background: url('/img/russia.svg') 61% 49% no-repeat, url('/img/arrow_down.png') 91% 49% no-repeat !important;
+  }
+
+  .form__tel {
+    max-width: 174px !important;
+    padding: 16px 0px 16px 10px !important;
+  }
+
+
+
+
+}
